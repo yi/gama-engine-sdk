@@ -1,5 +1,11 @@
 # Agal To Base64 编译工具
 
+## 如何签出这个分支
+
+```
+git clone -b agal-compile-tool git@github.com:yi/gama-engine-sdk.git 
+```
+
 ## 这是什么
 这是一个AIR程序，用户输入 Agal 代码，这个程序通过 agalminiassembler 将 输入的 agal 指令编译成 bytearray 然后通过 Base64 Encoder 输出
 
