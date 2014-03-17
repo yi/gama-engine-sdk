@@ -11,6 +11,12 @@ Gama 的服务基础是 Gama WWW 负责编译性声场，Gama SDK 负责客户�
 
 在生成环境中，Gama 的 AIR SDK 将只包含 agalminiassembler 编译候的GPU指令，而不包含原始的 Agal 代码
 
+## 工作原理
+参见： https://github.com/yi/gameclient/blob/master/team/_shared/rect_engine/src/rects_engine/Shaders.as#L116
+
+
 ## UI 结构
+
+下图中缺少编译 VetexAgal 和 编译 FragmentAgal 的区别，应该使用两个编译按钮
 
 ![ui sketch](https://raw.github.com/yi/gama-engine-sdk/agal-compile-tool/images/ui_sketch.png?token=9838__eyJzY29wZSI6IlJhd0Jsb2I6eWkvZ2FtYS1lbmdpbmUtc2RrL2FnYWwtY29tcGlsZS10b29sL2ltYWdlcy91aV9za2V0Y2gucG5nIiwiZXhwaXJlcyI6MTM5NTY4MjY0OX0%3D--577ad0691c67d194805fda5f60431a90caa34a4e)
