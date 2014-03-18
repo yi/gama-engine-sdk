@@ -76,6 +76,7 @@ package com.bit101.components
 			_panel.color = Style.TEXT_BACKGROUND;
 
 			_format = new TextFormat(Style.fontName, Style.fontSize, Style.LABEL_TEXT);
+			_textColor = Style.LABEL_TEXT;
 
 			_tf = new TextField();
 			_tf.x = 2;
@@ -212,6 +213,19 @@ package com.bit101.components
 		public function get html():Boolean
 		{
 			return _html;
+		}
+
+		private var _textColor:uint ;
+		public function get textColor():uint
+		{
+			return _textColor;
+		}
+		public function set textColor(value:uint):void
+		{
+			if(_textColor == value) return;
+			_textColor = value;
+			_format.color = _textColor;
+			invalidate();
 		}
 
         /**

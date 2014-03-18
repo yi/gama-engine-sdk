@@ -40,6 +40,7 @@ package
 			var asm:AGALMiniAssembler = new AGALMiniAssembler();
 			var agal:String           = srcTA.text;
 			var bin:ByteArray;
+			outTA.textColor = 0;
 			if (agal.indexOf('op') != -1)
 			{
 				bin = asm.assemble(Context3DProgramType.VERTEX , agal);
@@ -51,7 +52,15 @@ package
 				agal = Base64.encode(bin);
 			}
 			else
+			{
+				outTA.textColor = 0xff0000;
 				agal = '无法解析agal! 需要包含输出agal code';
+			}
+			if (asm.error)
+			{
+				outTA.textColor = 0xff0000;
+				agal = asm.error;
+			}
 			outTA.text = agal;
 		}
 
