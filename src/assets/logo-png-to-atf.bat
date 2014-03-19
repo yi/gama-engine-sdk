@@ -1,0 +1,1 @@
+png2atf -n 0:0 -i logo_powered_by.png -o logo_powered_by.atf
