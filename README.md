@@ -1,3 +1,5 @@
+# THis project has been deprecated. Please refer to [gama.lua](https://github.com/GamaLabs/gama.lua)
+
 # Gama 客户端渲染引擎 ActionScript 版本
 
 ## 目录结构和安排
